@@ -1,0 +1,33 @@
+html {
+	font-size: 18px;
+}
+
+body {
+	height: 100vh;
+	background: linear-gradient(
+		90deg,
+		rgb(40 47 99 / 86%) 0%,
+		rgb(40 112 37 / 74%) 100%
+	);
+	color: #fff;
+}
+
+.nav.navbar {
+	background-color: #0000008a;
+}
+
+main {
+	min-height: calc(100% - 63px);
+}
+
+h1.display-4 {
+	font-weight: bold;
+	color: #ffffffdb;
+}
+.card {
+	background-color: #0000008a;
+}
+
+.form-control {
+	background-color: #ffffffdb;
+}

@@ -1,0 +1,19 @@
+<h1 class="display-4 text-capitalize my-4">Unsubscribe from DevIdea?</h1>
+<a href="/" class="m-4 font-weight-bold btn btn-outline-primary btn-lg">Go home</a><button type="button" class="m-4 font-weight-bold btn btn-outline-danger btn-lg" data-toggle="modal" data-target="#exampleModal">Unsubscribe</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="text-dark"><strong>Are you absolutely sure you want to unsubscribe from DevIdeas? </strong><span class="d-block">(All your data will be deleted)</span></p>
+        <button type="button" class="m-2 px-4 btn-md btn btn-outline-primary font-weight-bold" data-dismiss="modal" aria-label="Close">No</button>
+
+    <form class="d-inline" action="/users/unsubscribe?_method=DELETE" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <button type="submit" class="m-2 px-4 btn-md btn btn-outline-danger  font-weight-bold">Yes</button>
+    </form>
+      </div>
+      
+    </div>
+  </div>
+</div>

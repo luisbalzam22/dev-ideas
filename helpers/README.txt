@@ -1,0 +1,1 @@
+These helpers are pretty much middlewares that, instead of being passed into the app.use(), are actually passed into A SPECIFIC REQUEST made to the router/app

@@ -1,0 +1,18 @@
+<h1 class="display-4 text-capitalize my-4">Your Dev Ideas</h1>
+{{#if ideas}}
+    <ul class="p-0">
+        {{#each ideas}}
+        <li class="card card-body d-block mb-4">
+            <span class="h4">{{title}}</span>
+            <p>{{details}}</p>
+            <a href="/ideas/edit/{{_id}}" class="btn btn-info font-weight-bold px-4 m-2">Edit Idea</a>
+            <form class="d-inline" action="/ideas/delete/{{_id}}?_method=DELETE" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <button type="submit" class="btn btn-danger font-weight-bold px-4 m-2">Delete Idea</button>
+            </form>
+        </li>
+        {{/each}}
+    </ul>
+{{else}}
+    <p class="font-weight-bold">There are no ideas for next development project</p>
+{{/if}}

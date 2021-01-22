@@ -1,0 +1,18 @@
+<h1 class="display-4 text-capitalize my-4">Login to your account</h1>
+<div class="row">
+  <div class="col-md-6 mx-auto">
+      <form class="card card-body" action="/users/login" method="POST">
+        <div class="form-group">
+          <label class="d-block form-group" for="email">Email
+            <input id="email" type="email" name="email" class="form-control mt-2" required="required">
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="d-block form-group" for="password">Password
+            <input id="password" type="password" name="password" class="form-control mt-2" required="required">
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+  </div>
+</div>

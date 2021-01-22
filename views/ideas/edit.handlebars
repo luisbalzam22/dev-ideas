@@ -1,0 +1,13 @@
+<div class="card card-body mt-4">
+    <h1 class="display-4">Edit Idea</h1>
+    <form action="/ideas/edit/{{idea._id}}?_method=PUT" method="POST"> {{!--We can do like this with any other method, just change the ?_method query and the method attribute--}}
+    <input type="hidden" name="_method" value="PUT"> {{!--We can do like this with any other method, just change the value attribute--}}
+        <label class="form-group d-block" for="title"> Title:
+            <input required="required" id="title" name="title" type="text" class="form-control mt-2" value="{{idea.title}}">
+        </label>
+        <label class="form-group d-block" for="details"> Details:
+            <textarea required="required" id="details" name="details" class="form-control mt-2">{{idea.details}}</textarea>
+        </label>
+        <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+</div>
