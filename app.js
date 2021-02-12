@@ -52,7 +52,7 @@ app.use(passport.session());
 //Connect Flash Middleware
 app.use(flash());
 
-//Global variables linked to request.flash values through this custom funtion definition middleware
+//Global variables (only globally available to each response for the lifetime of a request) linked to request.flash values through this custom funtion definition middleware
 app.use(function (request, response, next) {
 	response.locals.success_msg = request.flash('success_msg');
 	response.locals.error_msg = request.flash('error_msg');
